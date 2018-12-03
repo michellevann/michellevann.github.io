@@ -1,0 +1,14 @@
+:root {
+    --red: #9E4347; 
+    --pink:#E9A4A7; 
+    --darkpink: #BF696D; 
+    --darkred: #81262A; 
+    --darkdarkred :#5A0C10; 
+    --orange:#A16C44;
+    --blue:#2A635F;
+    --green:#3F8438;
+    
+    --font-one: 'Indie Flower', cursive;
+    --font-two: 'Roboto Condensed', sans-serif;
+    --font-three:'Roboto Slab', serif;
+}

@@ -1,0 +1,11 @@
+#nav-content {
+    margin-left: 80%;
+}
+
+.navbar-brand {
+    font-family: var(--font-one);
+}
+
+.nav-item a{
+    font-family: var(--font-three);
+}
