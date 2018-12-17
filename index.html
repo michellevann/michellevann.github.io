@@ -1,48 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto+Condensed|Roboto+Slab" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
     <div class="container-fluid full-height">
-        <div class="row">
-        
-            <div class="col-lg-2" id="leftRail">
-              <p>Michelle Vann</p>
-              <p>a bunch of crap about how awesome I am</p> 
+        <div class="headContainer">
+            <div class="header">
+                <h1>Michelle Vann</h1>
+                <h2>Junior Web Developer</h2>
             </div>
-            <div class="col-lg-10" style="padding:0;">
-                <div class="row">
-                    <div class="col-sm" id="upperLeft" style="padding:0;">
-                        <div id="target" class="flip-card flip-it">
-                            <div class="flip-card-inner">
-                              <div id="front" class="flip-card-front">
-                                <img src="./assets/IMG-2859_small.jpg" alt="selfPortrait" style="width:400px;height:533px;">
-                              </div>
-                              <div id="back" class="flip-card-back">
-                                <h1>Michelle Vann</h1> 
-                                <p>Junior Web Developer</p> 
-                                <input onclick="lock()" type="text"></input>
-                              </div>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="col-sm" id="upperRight" style="padding:0;">
-                      <img src="assets/yellow_small.jpg" height='100%' width='100%'>
+        </div>
+        <div class="row">
+            <div class="col-4" style="padding:0;">
+                <div id="target" class="flip-card flip-it">
+                    <div class="flip-card-inner">
+                        <div id="front" class="flip-card-front">
+                            <img src="./assets/IMG-2859-square400.jpg" alt="selfPortrait" style="border-radius:2%;">
+                        </div>
+                        <div id="back" class="flip-card-back">
+                            <h3>Michelle Vann</h3>
+                            <i>~ About Me ~</i>
+                            <p></p>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm" id="lowerLeft" style="padding:0;">
-                      <img src="assets" height='100%' width='100%'>
+            </div>
+            <div class="col-4" style="padding:0;">
+                <div id="target" class="flip-card flip-it">
+                    <div class="flip-card-inner">
+                        <div id="front" class="flip-card-front">
+                            <img src="assets/monitor-400.jpg" alt="projects" style="border-radius:2%;">
+                        </div>
+                        <div id="back" class="flip-card-back">
+                            <h3>My Projects & Skills</h3>
+                            <i>...so far...</i><br>
+                            <a class="projLink" href="https://www.vetoffice.azurewebsites.net">My MVC Project</a><br>
+                            <a class="projLink" href="https://www.vetoffice.azurewebsites.net">My Angular Project</a>
+                            <div class="row">
+                                <div class="col-sm">
+                                    <img src="assets/c-sharp-100.png" alt="cSharp">
+                                </div>
+                                <div class="col-sm">
+                                    <img src="assets/dotnet-100.png" alt="cSharp">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm">
+                                    <img src="assets/css3-100.png" alt="cSharp">
+                                </div>
+                                <div class="col-sm">
+                                    <img src="assets/angular-100.png" alt="cSharp">
+                                </div>
+                                <div class="col-sm">
+                                    <img src="assets/html5-100.png" alt="cSharp">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-sm" id="lowerRight" style="padding:0;">
-                      <img src="assets/payphone_small.jpg" height='100%' width='100%'>
+                </div>
+            </div>
+            <div class="col-4" style="padding:0;">
+                <div id="target" class="flip-card flip-it">
+                    <div class="flip-card-inner">
+                        <div id="front" class="flip-card-front">
+                            <img src="assets/payphone-square400.jpg" alt="contactMe" style="border-radius:2%;">
+                        </div>
+                        <div id="back" class="flip-card-back">
+                            <h3>Contact Me</h3>
+                            <i></i>
+                            <input onclick="lock()" type="text"></input>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -50,9 +88,13 @@
     </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
     <script src="./js/main/js"></script>
 </body>
+
 </html>
