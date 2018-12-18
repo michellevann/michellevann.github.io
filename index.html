@@ -8,8 +8,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto+Condensed|Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Cabin" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 </head>
 
 <body>
@@ -17,26 +18,29 @@
         <div class="headContainer">
             <div class="header">
                 <h1>Michelle Vann</h1>
-                <h2>Junior Web Developer</h2>
+                <h2>Junior .Net Developer</h2>
             </div>
         </div>
         <div class="row">
             <div class="col-4" style="padding:0;">
-                <div id="target" class="flip-card flip-it">
+                <div class="flip-card flip-it">
                     <div class="flip-card-inner">
                         <div id="front" class="flip-card-front">
                             <img src="./assets/IMG-2859-square400.jpg" alt="selfPortrait" style="border-radius:2%;">
                         </div>
                         <div id="back" class="flip-card-back">
                             <h3>Michelle Vann</h3>
-                            <i>~ About Me ~</i>
-                            <p></p>
+                            <i>~ About Me ~</i><br><br>
+                            <p class="about">I still need to think about what I want to put in this area. I'm not sure what I want to say
+                                and I am way too tired to even think about saying something coherent right now. But this gives
+                                you an idea of how it will look!
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-4" style="padding:0;">
-                <div id="target" class="flip-card flip-it">
+                <div class="flip-card flip-it">
                     <div class="flip-card-inner">
                         <div id="front" class="flip-card-front">
                             <img src="assets/monitor-400.jpg" alt="projects" style="border-radius:2%;">
@@ -44,26 +48,30 @@
                         <div id="back" class="flip-card-back">
                             <h3>My Projects & Skills</h3>
                             <i>...so far...</i><br>
-                            <a class="projLink" href="https://www.vetoffice.azurewebsites.net">My MVC Project</a><br>
-                            <a class="projLink" href="https://www.vetoffice.azurewebsites.net">My Angular Project</a>
+                            <div class="btnContainer">
+                                <a target="_BLANK" class="btn btn-primary" href="https://www.vetoffice.azurewebsites.net" role="button">My
+                                    MVC Project</a>
+                                <a target="_BLANK" class="btn btn-danger" href="https://www.vetoffice.azurewebsites.net" role="button">My
+                                    Angular Project</a>
+                            </div>
                             <div class="row">
                                 <div class="col-sm">
-                                    <img src="assets/c-sharp-100.png" alt="cSharp">
+                                    <img src="assets/c-sharp-100.png" style="padding-top:9%;" alt="cSharp">
                                 </div>
                                 <div class="col-sm">
-                                    <img src="assets/dotnet-100.png" alt="cSharp">
+                                    <img src="assets/dotnet-100.png" alt="dotNet">
                                 </div>
                             </div>
                             <br>
                             <div class="row">
                                 <div class="col-sm">
-                                    <img src="assets/css3-100.png" alt="cSharp">
+                                    <img src="assets/css3-100.png" alt="css">
                                 </div>
                                 <div class="col-sm">
-                                    <img src="assets/angular-100.png" alt="cSharp">
+                                    <img src="assets/angular-100.png" alt="angular">
                                 </div>
                                 <div class="col-sm">
-                                    <img src="assets/html5-100.png" alt="cSharp">
+                                    <img src="assets/html5-100.png" alt="html">
                                 </div>
                             </div>
                         </div>
@@ -77,9 +85,50 @@
                             <img src="assets/payphone-square400.jpg" alt="contactMe" style="border-radius:2%;">
                         </div>
                         <div id="back" class="flip-card-back">
-                            <h3>Contact Me</h3>
-                            <i></i>
-                            <input onclick="lock()" type="text"></input>
+                            <div id="sent">
+                                <h2>Email Sent!</h2>
+                            </div>
+                            <h3 class="contact">Contact Me</h3>
+                            <div class="container">
+                                <div class="row">
+                                    <form action="https://formspree.io/michelle@dougvann.com" class="submitForm" onclick="lock()" method="POST">
+                                        <div class="control-group">
+                                            <div class="form-group" style="margin:0;">
+                                                <label>Name</label>
+                                                <input type="text" class="form-control" placeholder="Your Name" id="name"
+                                                    required data-validation-required-message="Please enter your name"
+                                                    name="name">
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <div class="form-group" style="margin:0;">
+                                                <label>Email Address</label>
+                                                <input type="email" class="form-control" placeholder="Your Email" id="email"
+                                                    required data-validation-required-message="Please enter your email"
+                                                    name="_replyto">
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <div class="form-group">
+                                                <textarea class="form-control" rows="4" placeholder="Your Message" id="message"
+                                                    required data-validation-required-message="Please leave a message"
+                                                    name="message"></textarea>
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+                                        </div>
+                                        <div class="text-center">
+                                            <div id="success"></div>
+                                            <button class="btn btn-lg btn-danger" type="submit" style="margin:0;">
+                                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                                Send Message
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -94,7 +143,7 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-    <script src="./js/main/js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

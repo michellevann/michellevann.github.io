@@ -32,16 +32,44 @@ html, body {
 }
 
 h1 {
-  font-size: 4em;
-  padding-top: 2%;
+  font-size: 6em;
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: black;
+}
+
+h2 {
+  font-size: 3em;
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: black;
 }
 
 h3 {
   font-size: 2.25rem;
+  padding-top: 1%;
+}
+
+.about {
+  font-family: var(--font-two);
+  margin: 4%;
+}
+
+.contact{
+  margin:0;
 }
 
 i {
   font-size: 1.25rem;
+}
+
+.btnContainer {
+  padding-left: 1%;
+}
+
+.btn {
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: black;
+  font-size: 1.5rem;
+  padding-left: 1%;
 }
 
 #projLink {
@@ -55,6 +83,15 @@ i {
 
 button { 
   margin: 80px;
+}
+
+.submitForm {
+  width:95%;
+  margin-left:auto;
+}
+
+label {
+  font-family: var(--font-two);
 }
 
 .flip-card {
