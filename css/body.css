@@ -50,7 +50,9 @@ h3 {
 
 .about {
   font-family: var(--font-two);
-  margin: 4%;
+  margin-left: 4%;
+  margin-right: 4%;
+  font-size: .9rem;
 }
 
 .contact{
