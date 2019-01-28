@@ -48,6 +48,14 @@ h3 {
   padding-top: 1%;
 }
 
+h4 {
+  font-size: 1.5rem;
+}
+
+i {
+  font-size: 1rem;
+}
+
 .about {
   font-family: var(--font-two);
   margin-left: 4%;
@@ -58,10 +66,6 @@ h3 {
 
 .contact{
   margin:0;
-}
-
-i {
-  font-size: 1.25rem;
 }
 
 .btnContainer {
@@ -75,17 +79,12 @@ i {
   padding-left: 1%;
 }
 
-#projLink {
-  font-size: 1.5rem;
-  color:white;
+button { 
+  margin: 80px;
 }
 
 .row {
   padding-left: 2%;
-}
-
-button { 
-  margin: 80px;
 }
 
 .submitForm {
